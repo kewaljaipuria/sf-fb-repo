@@ -40,7 +40,7 @@ app.post('/webhook', (req, res) => {
 
 app.get('/webhook', (req, res) => {
   // Your verify token. Should be a random string.
-  const VERIFY_TOKEN = 'sample passphrase for SF FB Login'; // PAGE_ACCESS_TOKEN; // process.env.PAGE_ACCESS_SECRET; // 'sample_passphrase_for_SF_FB_Login'
+  const VERIFY_TOKEN = PAGE_ACCESS_TOKEN; // 'sample passphrase for SF FB Login'; // PAGE_ACCESS_TOKEN; // process.env.PAGE_ACCESS_SECRET; // 'sample_passphrase_for_SF_FB_Login'
   
   // Parse the query params
   const mode = req.query['hub.mode'];
